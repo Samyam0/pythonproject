@@ -11,16 +11,19 @@ class bank:
     def withdrew(Self, amount):
         if amount> Self.balance:
             print("you dont have sufficient balance in the bank")
-        else:
+        else:       
             Self.balance-=amount
             print(f"yoou have withdrew {amount} from the bank")
     
-    def currentBal(self):
-        print(f"your current balance is {self.balance}")
+   
+    
+    def display_info(self):
+      print(f"the accountholder : {self.accountholder}")
+      print(f"your current balance is: {self.balance}")
+        
 
 nicasia = bank("samyam maharjan")
 nicasia.deposit(20000)
-nicasia.currentBal
 nicasia.withdrew(5000)
-nicasia.currentBal()
+nicasia.display_info()
         
